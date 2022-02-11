@@ -64,7 +64,7 @@ switcher(int n){
 
 menuSelector(){
   try{
-    int _ref = int.parse(stdin.readLineSync()!);
+    int _ref = int.parse(stdin.readLineSync() ?? "");
     if (_ref < 6 && _ref > 0) {
       switcher(_ref);
     }else{
@@ -80,7 +80,7 @@ menuSelector(){
 
 numberselector(){
   try{
-    double _ref = double.parse(stdin.readLineSync()!);
+    double _ref = double.parse(stdin.readLineSync() ?? "");
     initialNum = _ref;
   }catch (e){
     print("please enter a valid number");
